@@ -1,4 +1,9 @@
-import { hello } from "@/a/test";
+import { Hono } from "hono";
 
-hello();
+const app = new Hono();
 
+app.get("/", (c) => {
+  return c.text("Hello Hono!");
+});
+
+export default app;
