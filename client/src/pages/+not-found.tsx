@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 export default function NotFound() {
   return (
-    <div className="min-h-svh flex w-full flex-col items-center justify-center gap-3">
+    <div className="min-h-svh flex w-full flex-col items-center justify-center gap-3 bg-[url('/login-bg.svg')] bg-cover bg-center bg-no-repeat">
       <div className="md:h-22 md:w-22 absolute left-2 top-2 h-32 w-32">
         <img
           src="https://cdn.prod.website-files.com/6003cddbd7fb71cb58f75e43/6003d75f4362233400ba87f8_MMIS%20Logo%20(Full).svg"
