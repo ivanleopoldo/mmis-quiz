@@ -1,8 +1,6 @@
-import { GalleryVerticalEnd } from "lucide-react";
-
 import { LoginForm } from "@/components/login-form";
 
-export default function LoginPage() {
+export default function Login() {
   return (
     <div className="min-h-svh grid lg:grid-cols-2">
       <div className="bg-muted relative hidden lg:block">
