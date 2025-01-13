@@ -5,12 +5,12 @@ export default function Login() {
     <div className="min-h-svh grid lg:grid-cols-2">
       <div className="bg-muted relative hidden lg:block">
         <img
-          src="https://picsum.photos/1080/1920"
+          src="/login-left.jpg"
           alt="Image"
           className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
         />
       </div>
-      <div className="flex flex-col gap-4 p-6 md:p-10">
+      <div className="flex flex-col gap-4 bg-[url('/login-bg.svg')] bg-cover bg-center bg-no-repeat p-6 md:p-10">
         <div className="flex justify-center gap-2 md:justify-start">
           <a href="#" className="flex items-center gap-2 font-medium">
             <div className="flex h-6 w-28 items-center justify-center rounded-md">
