@@ -1,50 +1,43 @@
-# React + TypeScript + Vite
+# BrightMind
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A quiz creation and taking platform for students and teachers, branded around [MMIS](https://mmis.edu.ph)
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Create quizes (Protected)
+  - Limited to question types; multiple choice, fill in the blanks, essay type.
+  - Change background themes.
+  - Change points per question.
+  - Add multiple correct answers.
+  - Add time duration limit for all questions or specific questions.
+  - Add setting to toggle correct answers viewing after quiz.
+  - Add setting to allow multiple attempts.
+  - Add setting to randomize question order.
+  - Add setting to allow to start quizes to be taken at a specific time.
+  - Add setting to allow to start quizes to be taken within a specific time range.
+  - Add setting to allow takers to start quiz on their own or teacher will decide for everyone.
+- Take quizes (Public)
 
-## Expanding the ESLint configuration
+## Pages
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Login
+- Signup
+- Quizzes
+- Quiz creation
+- Quiz Results
+- Quiz
+- Settings
+- Account
 
-- Configure the top-level `parserOptions` property like this:
+## Sidebar
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- Platform
+  - Quizzes
+    - Create Quiz
+    - \[Quiz Name\]
+  - Settings
+- Recent Quizzes
+  - \[Quiz Name\]
+- Account
+  - Account
+  - Logout
