@@ -11,6 +11,7 @@ import {
   SidebarMenuSubButton,
   SidebarMenuSubItem,
 } from "./ui/sidebar";
+import { MouseEventHandler } from "react";
 
 export function SidebarGroupContent({
   content,
@@ -19,7 +20,7 @@ export function SidebarGroupContent({
     title: string;
     action?: {
       icon: LucideIcon;
-      onClick: () => {};
+      onClick: MouseEventHandler<HTMLButtonElement>;
     };
     items?: {
       title: string;
@@ -42,7 +43,7 @@ export function SidebarGroupContent({
           <SidebarGroup>
             <SidebarGroupLabel>{item.title}</SidebarGroupLabel>
             {item.action && (
-              <SidebarGroupAction>
+              <SidebarGroupAction onClick={item.action.onClick}>
                 <item.action.icon />
               </SidebarGroupAction>
             )}
