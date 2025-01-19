@@ -52,7 +52,12 @@ export function SidebarGroupContent({
                 item.items.map((item) => {
                   return (
                     <SidebarMenuItem>
-                      <SidebarMenuButton>{item.title}</SidebarMenuButton>
+                      <SidebarMenuButton className="text-sidebar-foreground/70">
+                        {item.icon && (
+                          <item.icon className="text-sidebar-foreground/70" />
+                        )}
+                        <span>{item.title}</span>
+                      </SidebarMenuButton>
                       <SidebarMenuSub>
                         {item.subitems &&
                           item.subitems.map((subitem) => {
