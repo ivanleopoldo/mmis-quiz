@@ -49,7 +49,7 @@ export function SidebarGroupContent({
               </SidebarGroupAction>
             )}
             <SidebarMenu>
-              {item.items &&
+              {item.items ? (
                 item.items.map((item) => {
                   return (
                     <SidebarMenuItem>
@@ -78,7 +78,14 @@ export function SidebarGroupContent({
                       </SidebarMenuSub>
                     </SidebarMenuItem>
                   );
-                })}
+                })
+              ) : (
+                <SidebarMenuItem>
+                  <SidebarMenuButton className="pointer-events-none text-muted-foreground/50">
+                    No quizzes yet!
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+              )}
             </SidebarMenu>
           </SidebarGroup>
         );
