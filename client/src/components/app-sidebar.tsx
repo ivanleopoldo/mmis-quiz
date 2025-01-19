@@ -34,10 +34,10 @@ const content = [
   {
     title: "Platform",
     items: [
-      { title: "Dashboard", icon: LayoutDashboard },
-      { title: "Quizzes", icon: ClipboardPen },
-      { title: "Analytics", icon: PieChart },
-      { title: "Settings", icon: Settings },
+      { title: "Dashboard", icon: LayoutDashboard, url: "home" },
+      { title: "Quizzes", icon: ClipboardPen, url: "quizzes" },
+      { title: "Analytics", icon: PieChart, url: "analytics" },
+      { title: "Settings", icon: Settings, url: "settings" },
     ],
   },
   {

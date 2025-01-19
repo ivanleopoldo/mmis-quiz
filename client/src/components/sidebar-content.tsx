@@ -12,6 +12,7 @@ import {
   SidebarMenuSubItem,
 } from "./ui/sidebar";
 import { MouseEventHandler } from "react";
+import { Link } from "react-router";
 
 export function SidebarGroupContent({
   content,
@@ -52,11 +53,16 @@ export function SidebarGroupContent({
                 item.items.map((item) => {
                   return (
                     <SidebarMenuItem>
-                      <SidebarMenuButton className="text-sidebar-foreground/70">
-                        {item.icon && (
-                          <item.icon className="text-sidebar-foreground/70" />
-                        )}
-                        <span>{item.title}</span>
+                      <SidebarMenuButton
+                        className="text-sidebar-foreground/70"
+                        asChild
+                      >
+                        <Link to={item.url!}>
+                          {item.icon && (
+                            <item.icon className="text-sidebar-foreground/70" />
+                          )}
+                          <span>{item.title}</span>
+                        </Link>
                       </SidebarMenuButton>
                       <SidebarMenuSub>
                         {item.subitems &&
