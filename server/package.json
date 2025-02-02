@@ -4,9 +4,11 @@
     "dev": "bun run --watch ./src/index.ts"
   },
   "dependencies": {
-    "hono": "^4.6.16"
+    "hono": "^4.6.16",
+    "mongoose": "^8.9.6"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "dotenv": "^16.4.7"
   }
 }
